@@ -1,0 +1,57 @@
+Name: Tags
+Type: FolderType
+Children:
+- File: Auto_Mode/Auto_Mode.yaml
+- File: Manual_Mode/Manual_Mode.yaml
+- File: Calibration/Calibration.yaml
+- File: I_O_Screen/I_O_Screen.yaml
+- File: Alarm/Alarm.yaml
+- File: Recipe/Recipe.yaml
+- File: DataSetup/DataSetup.yaml
+- File: Batch_Perameter/Batch_Perameter.yaml
+- File: PrintTags/PrintTags.yaml
+- Name: Batch_running
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "B3:4/2"
+- Name: Vial_height
+  Type: MicroControllerTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F8:15"
+- Name: Batch_reset
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "B3:9/8"
+- Name: Batch_start_stop
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "B3:32/0"
+- Name: Batch_yeild
+  Type: MicroControllerTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F8:45"

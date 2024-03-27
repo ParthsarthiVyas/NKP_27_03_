@@ -1,0 +1,21 @@
+Name: Calibration
+Type: FolderType
+Children:
+- Name: S2_MM_Min
+  Type: MicroControllerTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F8:35"
+- Name: S2_MM_Hz
+  Type: MicroControllerTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F8:37"
